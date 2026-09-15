@@ -837,9 +837,9 @@ function renderDashboard(){
 
   const perTipo = computeConsumoPerTipoGomme();
   const rilevanti = ['Estive','Invernali'].filter(t=>perTipo[t]!=null);
-  document.getElementById('statConsumoBreakdown').textContent = rilevanti.length
-    ? rilevanti.map(t=>`${t}: ${perTipo[t].toFixed(1)} km/l`).join(' · ')
-    : '';
+  document.getElementById('statConsumoBreakdown').innerHTML = rilevanti.length 
+  ? rilevanti.map(t=>`${t}: ${perTipo[t].toFixed(1)} km/l`).join('<br>') 
+  : '';
 
   renderCarburante();
 
