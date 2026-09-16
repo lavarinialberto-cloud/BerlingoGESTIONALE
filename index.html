@@ -1152,5 +1152,11 @@ document.getElementById('inputRestoreBackup').addEventListener('change', (e)=>{
 
 loadData();
 </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGZ1bmN0aW9uKGV2ZW50KSB7fSk7')
+      .then(function() { console.log('Service Worker Registrato'); });
+  }
+</script>
 </body>
 </html>
