@@ -1,0 +1,16 @@
+{
+  "name": "Il Mio Berlingo - Gestione Furgone",
+  "short_name": "Il Mio Berlingo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F3F1EA",
+  "theme_color": "#2C4A5E",
+  "icons": [
+    {
+      "src": "icona-app.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
